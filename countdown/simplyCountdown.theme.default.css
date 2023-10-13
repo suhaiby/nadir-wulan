@@ -57,12 +57,11 @@
 }
 
 @media screen and (max-width: 480px) {
-    html {
-      font-size: 50%;
-    }
-    .simply-countdown > .simply-section {
-      padding: 40px;
-      margin: 2px;
-    }
+  html {
+    font-size: 50%;
   }
-  
+  .simply-countdown > .simply-section {
+    padding: 40px;
+    margin: 2px;
+  }
+}

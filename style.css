@@ -8,6 +8,8 @@ body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
   min-height: 4000px;
+  overflow: hidden;
+  padding-right: 10px !important;
 }
 
 .hero::before {
@@ -64,10 +66,12 @@ body {
 .mynavbar {
   background-color: rgba(255, 255, 2555, 0.3) !important;
   backdrop-filter: blur(4px);
+  /* padding-right: 0; */
 }
 
 .mynavbar .offcanvas {
   height: 100vh;
+  /* padding-right: 0; */
 }
 
 .mynavbar .navbar-brand,
@@ -153,34 +157,33 @@ body {
   font-weight: bold;
 }
 
-.info .alamat{
+.info .alamat {
   font-size: 1.1rem;
-
 }
 
-.info .description{
+.info .description {
   font-size: 1rem;
   font-weight: 300;
 }
 
-.info .card{
-  background-color: rgba(255,255,255,0.2) !important;
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
   color: white !important;
   border: 1px solid #999;
   margin-bottom: 15px;
 }
 
-.info .card-header{
+.info .card-header {
   border-bottom: 1px solid #999;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
 
-.info .card-body{
+.info .card-body {
   font-size: 1rem;
 }
 
-.info .card-footer{
+.info .card-footer {
   border-top: 1px solid #999;
   font-size: 0.9rem;
   font-weight: 300;
@@ -228,15 +231,29 @@ body {
     padding: 45px;
     margin: 3px;
   }
+  .mynavbar .nav-link {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }
 /* 576 */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 368px) {
   html {
     font-size: 50%;
+  }
+  body {
+    min-height: 368px;
   }
   .simply-countdown > .simply-section {
     padding: 40px;
     margin: 2px;
+  }
+  .mynavbar {
+    padding-right: 0;
+  }
+  .mynavbar .nav-link {
+    font-size: 1rem;
+    text-align: center;
   }
 }
