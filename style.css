@@ -8,7 +8,6 @@ body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
   min-height: 4000px;
-  overflow: hidden;
   padding-right: 10px !important;
 }
 
@@ -26,6 +25,7 @@ body {
   filter: grayscale();
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: scroll;
 }
 
 .hero {
@@ -64,14 +64,12 @@ body {
 }
 
 .mynavbar {
-  background-color: rgba(255, 255, 2555, 0.3) !important;
+  background-color: rgba(255, 255, 255, 0.3) !important;
   backdrop-filter: blur(4px);
-  /* padding-right: 0; */
 }
 
 .mynavbar .offcanvas {
   height: 100vh;
-  /* padding-right: 0; */
 }
 
 .mynavbar .navbar-brand,
@@ -231,10 +229,6 @@ body {
     padding: 45px;
     margin: 3px;
   }
-  .mynavbar .nav-link {
-    font-size: 1.5rem;
-    text-align: center;
-  }
 }
 /* 576 */
 
@@ -248,12 +242,5 @@ body {
   .simply-countdown > .simply-section {
     padding: 40px;
     margin: 2px;
-  }
-  .mynavbar {
-    padding-right: 0;
-  }
-  .mynavbar .nav-link {
-    font-size: 1rem;
-    text-align: center;
   }
 }
